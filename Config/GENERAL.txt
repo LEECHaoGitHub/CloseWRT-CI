@@ -46,8 +46,6 @@ CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_SingBox=y
 CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_V2ray_Plugin=y
 
 CONFIG_PACKAGE_haproxy=y
-CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
-CONFIG_PACKAGE_shadowsocks-rust-ssserver=y
 
 #增加插件
 CONFIG_PACKAGE_luci-app-wireguard=y
@@ -139,6 +137,7 @@ CONFIG_PACKAGE_mmc-utils=y
 # CONFIG_PACKAGE_kmod-usb-acm is not set
 # CONFIG_PACKAGE_kmod-usb-ohci is not set
 # CONFIG_PACKAGE_kmod-usb-uhci is not set
+
 
 
 
