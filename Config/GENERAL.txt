@@ -67,11 +67,14 @@ CONFIG_PACKAGE_luci-app-vlmcsd=y  #kms
 # CONFIG_PACKAGE_luci-app-mosdns=y
 # CONFIG_PACKAGE_luci-app-smartdns=y
 # CONFIG_PACKAGE_luci-app-openlist2=y
-CONFIG_PACKAGE_luci-app-socat=y
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-firewall=y
 CONFIG_PACKAGE_luci-app-wolplus=y  #网络唤醒
+
+# 安全防护
 CONFIG_PACKAGE_luci-app-authshield=y
+# CONFIG_PACKAGE_luci-app-watchdog=y  #看门狗
+# CONFIG_PACKAGE_luci-app-taskplan=y  #任务设置2.0版
 
 # vpn
 # CONFIG_PACKAGE_luci-app-vnt=y
@@ -82,20 +85,8 @@ CONFIG_PACKAGE_luci-app-wireguard=y
 CONFIG_PACKAGE_luci-proto-wireguard=y
 CONFIG_PACKAGE_wireguard-tools=y
 
-# CONFIG_PACKAGE_luci-app-watchdog=y  #看门狗
-# CONFIG_PACKAGE_luci-app-taskplan=y  #任务设置2.0版
-
+# istore商店
 CONFIG_PACKAGE_luci-app-store=y
-
-#删除插件
-CONFIG_PACKAGE_luci-app-wol=n
-CONFIG_PACKAGE_luci-app-ddns=n
-CONFIG_PACKAGE_luci-app-xlnetacc=n
-CONFIG_PACKAGE_luci-app-unblockmusic=n
-CONFIG_PACKAGE_luci-app-accesscontrol=n
-CONFIG_PACKAGE_luci-app-uugamebooster=n
-CONFIG_PACKAGE_luci-app-adbyby-plus=n
-CONFIG_PACKAGE_luci-app-attendedsysupgrade=n
 
 #网络分享
 CONFIG_PACKAGE_autosamba=n
@@ -113,6 +104,16 @@ CONFIG_PACKAGE_luci-app-argon-config=y
 CONFIG_PACKAGE_luci-theme-aurora=y
 CONFIG_PACKAGE_luci-app-aurora-config=y
 CONFIG_PACKAGE_luci-theme-bootstrap=n
+
+#删除插件
+CONFIG_PACKAGE_luci-app-wol=n
+CONFIG_PACKAGE_luci-app-ddns=n
+CONFIG_PACKAGE_luci-app-xlnetacc=n
+CONFIG_PACKAGE_luci-app-unblockmusic=n
+CONFIG_PACKAGE_luci-app-accesscontrol=n
+CONFIG_PACKAGE_luci-app-uugamebooster=n
+CONFIG_PACKAGE_luci-app-adbyby-plus=n
+CONFIG_PACKAGE_luci-app-attendedsysupgrade=n
 
 # --- [必需] 文件系统支持 ---
 CONFIG_PACKAGE_kmod-fs-ext4=y
@@ -141,6 +142,3 @@ CONFIG_PACKAGE_mmc-utils=y
 # CONFIG_PACKAGE_kmod-usb-acm is not set
 # CONFIG_PACKAGE_kmod-usb-ohci is not set
 # CONFIG_PACKAGE_kmod-usb-uhci is not set
-
-
-
