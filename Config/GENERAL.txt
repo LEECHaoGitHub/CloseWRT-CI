@@ -80,7 +80,7 @@ CONFIG_PACKAGE_luci-app-authshield=y
 # CONFIG_PACKAGE_luci-app-vnt=y
 # CONFIG_PACKAGE_luci-app-easytier=y
 CONFIG_PACKAGE_luci-app-zerotier=y
-CONFIG_PACKAGE_luci-app-tailscale-community=y
+# CONFIG_PACKAGE_luci-app-tailscale-community=y
 CONFIG_PACKAGE_luci-app-wireguard=y
 CONFIG_PACKAGE_luci-proto-wireguard=y
 CONFIG_PACKAGE_wireguard-tools=y
@@ -130,10 +130,6 @@ CONFIG_PACKAGE_exfat-mkfs=y
 
 # --- eMMC 工具  ---
 CONFIG_PACKAGE_mmc-utils=y
-
-# ---  M.2 接口支持 ---
-# CONFIG_PACKAGE_pciutils=y
-# CONFIG_PACKAGE_kmod-nvme=y
 
 # --- [删除] 除非你插手机/4G卡/外接网卡，否则删除 ---
 # CONFIG_PACKAGE_kmod-usb-net-rndis is not set
@@ -193,6 +189,7 @@ CONFIG_PACKAGE_libcap-bin=y
 CONFIG_PACKAGE_ip-full=y
 CONFIG_PACKAGE_kmod-nft-compat=y
 CONFIG_PACKAGE_kmod-inet-diag=y
+
 
 
 
