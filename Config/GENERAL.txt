@@ -201,6 +201,3 @@ CONFIG_PACKAGE_kmod-xdp-sockets-diag=y
 
 # ksmbd
 CONFIG_PACKAGE_kmod-fs-ksmbd=y
-
-
-
