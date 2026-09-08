@@ -50,20 +50,34 @@ UPDATE_PACKAGE "aurora" "eamonxg/luci-theme-aurora" "master"
 UPDATE_PACKAGE "aurora-config" "eamonxg/luci-app-aurora-config" "master"
 UPDATE_PACKAGE "kucat" "sirpdboy/luci-theme-kucat" "master"
 UPDATE_PACKAGE "kucat-config" "sirpdboy/luci-app-kucat-config" "master"
+UPDATE_PACKAGE "noobwrt" "nooblk-98/luci-theme-noobwrt" "master"
+UPDATE_PACKAGE "shadcn" "eamonxg/luci-theme-shadcn" "main"
+UPDATE_PACKAGE "theme-fluent" "LazuliKao/luci-theme-fluent" "main"
 
 #科学插件
+UPDATE_PACKAGE "daede" "kenzok8/openwrt-daede" "main"
 UPDATE_PACKAGE "daed" "QiuSimons/luci-app-daed" "kix"
 UPDATE_PACKAGE "vmlinux-btf" "QiuSimons/vmlinux-btf" "master"
+
+# UPDATE_PACKAGE "daed-honk" "QiuSimons/luci-app-honk" "master"
+UPDATE_PACKAGE "daed-honk" "breeze303/openwrt-honk" "main"
+
 UPDATE_PACKAGE "helloworld-ssrp" "fw876/helloworld" "master"
+
 UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
+
 UPDATE_PACKAGE "momo" "nikkinikki-org/OpenWrt-momo" "main"
 UPDATE_PACKAGE "nikki" "nikkinikki-org/OpenWrt-nikki" "main"
+UPDATE_PACKAGE "nikki-rs" "CHKayanami/OpenWrt-nikki-rs" "main"
+
 UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "master" "pkg"
+
 UPDATE_PACKAGE "passwall" "Openwrt-Passwall/openwrt-passwall" "main" "pkg"
 UPDATE_PACKAGE "passwall2" "Openwrt-Passwall/openwrt-passwall2" "main" "pkg"
-# UPDATE_PACKAGE "passwall-packages" "Openwrt-Passwall/openwrt-passwall-packages" "main" 
+UPDATE_PACKAGE "passwall-packages" "Openwrt-Passwall/openwrt-passwall-packages" "main" 
 
 # 常用工具与应用
+UPDATE_PACKAGE "podman" "Zerogiven-OpenWRT-Packages/luci-app-podman" "main"  #podman
 UPDATE_PACKAGE "netspeedtest" "sirpdboy/luci-app-netspeedtest" "master" "" "homebox speedtest"  #homebox speedtest测速
 UPDATE_PACKAGE "openlist2" "sbwml/luci-app-openlist2" "main"    #alist的新替换openlist
 UPDATE_PACKAGE "poweroffdevice" "sirpdboy/luci-app-poweroffdevice" "js"   #关机
