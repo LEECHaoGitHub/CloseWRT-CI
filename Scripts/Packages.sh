@@ -56,11 +56,10 @@ UPDATE_PACKAGE "theme-fluent" "LazuliKao/luci-theme-fluent" "main"
 
 #科学插件
 UPDATE_PACKAGE "daede" "kenzok8/openwrt-daede" "main"
-UPDATE_PACKAGE "daed" "QiuSimons/luci-app-daed" "kix"
-UPDATE_PACKAGE "vmlinux-btf" "QiuSimons/vmlinux-btf" "master"
 
+UPDATE_PACKAGE "daed-honk" "kenzok8/openwrt-honk" "main"
+# UPDATE_PACKAGE "daed-honk" "breeze303/openwrt-honk" "main"
 # UPDATE_PACKAGE "daed-honk" "QiuSimons/luci-app-honk" "master"
-UPDATE_PACKAGE "daed-honk" "breeze303/openwrt-honk" "main"
 
 UPDATE_PACKAGE "helloworld-ssrp" "fw876/helloworld" "master"
 
@@ -74,7 +73,7 @@ UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "master" "pkg"
 
 UPDATE_PACKAGE "passwall" "Openwrt-Passwall/openwrt-passwall" "main" "pkg"
 UPDATE_PACKAGE "passwall2" "Openwrt-Passwall/openwrt-passwall2" "main" "pkg"
-UPDATE_PACKAGE "passwall-packages" "Openwrt-Passwall/openwrt-passwall-packages" "main" 
+# UPDATE_PACKAGE "passwall-packages" "Openwrt-Passwall/openwrt-passwall-packages" "main" 
 
 # 常用工具与应用
 UPDATE_PACKAGE "podman" "Zerogiven-OpenWRT-Packages/luci-app-podman" "main"  #podman
@@ -86,19 +85,22 @@ UPDATE_PACKAGE "advancedplus" "sirpdboy/luci-app-advancedplus" "main"  #高级�
 UPDATE_PACKAGE "partexp" "sirpdboy/luci-app-partexp" "main"  #分区助手
 UPDATE_PACKAGE "mosdns" "sbwml/luci-app-mosdns" "v5" "" "v2dat"
 rm -rf feeds/packages/lang/golang
-UPDATE_PACKAGE "packages_lang_golang" "sbwml/packages_lang_golang" "26.x" 
+UPDATE_PACKAGE "packages_lang_golang" "sbwml/packages_lang_golang" "27.x" 
 UPDATE_PACKAGE "qbittorrent" "sbwml/luci-app-qbittorrent" "master" "" "qt6base qt6tools rblibtorrent"  #qbittorrent下载
+UPDATE_PACKAGE "quickfile" "sbwml/luci-app-quickfile" "main"
+UPDATE_PACKAGE "timecontrol" "sirpdboy/luci-app-timecontrol" "main"
 
 UPDATE_PACKAGE "authshield" "iv7777/luci-app-authshield" "main"  #防止异常登录保护
 UPDATE_PACKAGE "taskplan" "sirpdboy/luci-app-taskplan" "master"    #计划任务
 UPDATE_PACKAGE "watchdog" "sirpdboy/luci-app-watchdog" "main"  #看门狗
 
-UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-app-wolplus"
-UPDATE_PACKAGE "owq-wol" "isalikai/luci-app-owq-wol" "main"  # wol加强版
+UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "axonhub gecoosac sing-box luci-app-timewol luci-app-wolplus luci-app-wolultra"UPDATE_PACKAGE "owq-wol" "isalikai/luci-app-owq-wol" "main"  # wol加强版
 
 UPDATE_PACKAGE "open-app-filter" "destan19/OpenAppFilter" "master" "" "luci-app-appfilter oaf"  #应用过滤(OAF)
 UPDATE_PACKAGE "MentoHUST" "KyleRicardo/MentoHUST-OpenWrt-ipk" "master"  #锐捷验证 luci-app-mentohust
-# UPDATE_PACKAGE "diskman" "lisaac/luci-app-diskman" "master"  #luci-app-diskman
+
+UPDATE_PACKAGE "diskman" "sbwml/luci-app-diskman" "main"
+UPDATE_PACKAGE "diskmanager" "4IceG/luci-app-mini-diskmanager" "main"
 
 UPDATE_PACKAGE "fancontrol" "rockjake/luci-app-fancontrol" "main"   #Openwrt简易通用风扇控制
 
@@ -106,12 +108,12 @@ UPDATE_PACKAGE "lucky" "gdy666/luci-app-lucky" "main"   #lucky 大吉
 UPDATE_PACKAGE "ddns-go" "sirpdboy/luci-app-ddns-go" "main"  #luci-app-ddns-go
 
 UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
+UPDATE_PACKAGE "qmodem-generic" "LianXia233/luci-app-qmodem-generic" "main"
 
 UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
 UPDATE_PACKAGE "easytier" "EasyTier/luci-app-easytier" "main"  #luci-app-easytier
 UPDATE_PACKAGE "tailscale-community" "Tokisaki-Galaxy/luci-app-tailscale-community" "master"  #luci-app-tailscale社区版
 
-UPDATE_PACKAGE "istore" "linkease/istore" "main"
 #更新软件包版本
 UPDATE_VERSION() {
 	local PKG_NAME=$1
